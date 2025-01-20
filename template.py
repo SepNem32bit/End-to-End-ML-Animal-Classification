@@ -4,7 +4,7 @@ from pathlib import Path
 
 logging.basicConfig(level=logging.INFO,format='[%(ascitime)s]: %(message):')
 
-project_name="animal classifier"
+project_name="animalClassifier"
 
 list_directory=[
     ".github/workflows/.gitkeep",

@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/animalClassifier/__init__.py
+src/animalClassifier.egg-info/PKG-INFO
+src/animalClassifier.egg-info/SOURCES.txt
+src/animalClassifier.egg-info/dependency_links.txt
+src/animalClassifier.egg-info/top_level.txt
+src/animalClassifier/components/__init__.py
+src/animalClassifier/config/__init__.py
+src/animalClassifier/constants/__init__.py
+src/animalClassifier/entity/__init__.py
+src/animalClassifier/pipeline/__init__.py
+src/animalClassifier/utils/__init__.py
