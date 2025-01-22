@@ -16,7 +16,7 @@ import base64
 # The output of the function matches the return type annotation.
 #A decorator in Python is a design pattern that allows you to modify the behavior of a function or class without changing its code.
 #for example in this function inputs and outputs are integer. If we input any other data type, it'll give us an error
-# get_multiplications(x=3,y="2")
+# we use this decorator to not get string in get_multiplications(x=3,y="2") when we need to get integer output
 @ensure_annotations
 def read_yaml(path_to_yaml:Path)->ConfigBox:
     try:
