@@ -1,0 +1,10 @@
+artifacts_root: artifacts
+
+#downloading the data from github
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/cat-dog-data.zip
+  #zip file
+  local_data_file: artifacts/data_ingestion/data.zip
+  #unzip file
+  unzip_dir: artifacts/data_ingestion

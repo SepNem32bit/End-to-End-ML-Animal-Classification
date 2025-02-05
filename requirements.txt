@@ -1,6 +1,6 @@
 tensorflow==2.13.0
 pandas 
-notebook
+# notebook
 numpy
 matplotlib
 seaborn

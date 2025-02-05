@@ -1,1 +1,42 @@
 [2025-01-20 21:38:36,977: INFO: test: welcome to the test]
+[2025-02-04 19:35:20,106: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-04 19:35:20,165: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-04 19:35:20,183: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-04 19:35:20,225: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-05 16:40:24,853: INFO: main: >>>>>> stage data ingestion stage started <<<<<<]
+[2025-02-05 16:40:24,909: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-05 16:40:24,918: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-05 16:40:24,919: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-05 16:40:24,932: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-05 16:40:24,933: INFO: data_ingestion_components: Trying to download file...]
+[2025-02-05 16:40:24,933: INFO: data_ingestion_components: Download started...]
+[2025-02-05 16:40:37,131: INFO: data_ingestion_components: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 29B5:1BC219:15ABB1:1D4500:67A39479
+Accept-Ranges: bytes
+Date: Wed, 05 Feb 2025 16:40:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-lhr-egll1980058-LHR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1738773625.339005,VS0,VE1102
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: bb0426d5fd1eb5e41c0c9d9be95f3ba70a85af4d
+Expires: Wed, 05 Feb 2025 16:45:26 GMT
+Source-Age: 1
+
+]
+[2025-02-05 16:40:37,660: INFO: main: >>>>>> stage data ingestion stage completed <<<<<<
+
+x==========x]

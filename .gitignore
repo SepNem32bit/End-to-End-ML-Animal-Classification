@@ -166,3 +166,8 @@ artifacts/*
 
 #ignore virtual environments
 myenv/*
+
+#ingnore research file where we tested codes
+research/*
+
+artifacts/*

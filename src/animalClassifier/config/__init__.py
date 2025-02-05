@@ -1,0 +1,1 @@
+from src.animalClassifier.config.config_manager import *
