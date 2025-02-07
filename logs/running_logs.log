@@ -40,3 +40,27 @@ Source-Age: 1
 [2025-02-05 16:40:37,660: INFO: main: >>>>>> stage data ingestion stage completed <<<<<<
 
 x==========x]
+[2025-02-06 17:04:02,909: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-06 17:04:03,426: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-06 17:04:03,450: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-06 17:04:03,454: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-06 17:04:09,584: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-02-07 14:09:54,181: INFO: main: >>>>>> stage Data Ingestion Stage 1 started <<<<<<]
+[2025-02-07 14:09:54,306: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-07 14:09:54,493: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-07 14:09:54,604: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-07 14:09:54,605: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-07 14:09:54,606: INFO: data_ingestion_components: Trying to download file...]
+[2025-02-07 14:09:54,606: INFO: data_ingestion_components: File already exists of size: 21806 KB]
+[2025-02-07 14:09:55,443: INFO: main: >>>>>> stage Data Ingestion Stage 1 completed <<<<<<
+
+End of the Stage]
+[2025-02-07 14:09:55,444: INFO: main: >>>>>> stage Model Preparation Stage 2 started <<<<<<]
+[2025-02-07 14:09:55,453: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-02-07 14:09:55,461: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-02-07 14:09:55,463: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-07 14:09:55,465: INFO: common: created directory at: <class 'pathlib.Path'>]
+[2025-02-07 14:10:24,314: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-02-07 14:10:30,163: INFO: main: >>>>>> stage Model Preparation Stage 2 completed <<<<<<
+
+End of the Stage]

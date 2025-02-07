@@ -1,1 +1,12 @@
-dummy key : dummy value
+AUGMENTATION: True
+#we can find these parameters in keras' trained model documentations
+IMAGE_SIZE: [224, 224, 3] # as per VGG 16 model
+BATCH_SIZE: 16
+#whether to include the fully-connected layer at the top of the network.
+INCLUDE_TOP: False
+EPOCHS: 1
+#dog or cat
+CLASSES: 2
+#for transfer learning
+WEIGHTS: imagenet
+LEARNING_RATE: 0.01
