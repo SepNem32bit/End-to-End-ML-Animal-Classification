@@ -57,7 +57,9 @@ class ConfigurationManager:
 
 
     def get_prepare_callback_config(self):
+        #retrieving the callbacks config
         config = self.config.prepare_callbacks
+        #dirname only reads the diretory and ignore the file name
         model_ckpt_dir = os.path.dirname(config.checkpoint_model_filepath)
         create_directories([
             Path(model_ckpt_dir),
