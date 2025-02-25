@@ -101,6 +101,7 @@ class ConfigurationManager:
         return training_config
     
 
+
     def get_validation_config(self):
         eval_config = EvaluationConfig(
             path_of_model=self.config.training.trained_model_path,
