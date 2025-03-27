@@ -226,3 +226,138 @@ End of the Stage]
 [2025-02-25 19:38:32,814: INFO: main: >>>>>> stage Model Evaluation Stage 4 completed <<<<<<
 
 End of the Stage]
+[2025-03-27 15:54:24,573: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.6:8080]
+[2025-03-27 15:54:24,758: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-03-27 16:00:29,010: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:00:29] "GET / HTTP/1.1" 200 -]
+[2025-03-27 16:02:35,197: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:02:35] "POST /predict HTTP/1.1" 200 -]
+[2025-03-27 16:11:56,276: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 58, in predictRoute
+    result = clApp.classifier.predictiondogcat()
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\src\animalClassifier\pipeline\stage_prod_prediction.py", line 14, in predictiondogcat
+    model = load_model(os.path.join("artifacts","training", "model.h5"))
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\keras\src\saving\saving_api.py", line 238, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "D:\Data Science\Python Assignment\End-to-End-ML-Animal-Classification\myenv\lib\site-packages\keras\src\saving\legacy\save.py", line 234, in load_model
+    raise IOError(
+OSError: No file or directory found at artifacts\training\model.h5
+[2025-03-27 16:11:56,751: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:11:56] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-03-27 16:14:20,526: INFO: main: >>>>>> stage Data Ingestion - Stage 1 started <<<<<<]
+[2025-03-27 16:14:20,742: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:14:20,812: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:14:20,834: INFO: common: created directory at: artifacts]
+[2025-03-27 16:14:20,865: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-27 16:14:20,867: INFO: data_ingestion_components: Trying to download file...]
+[2025-03-27 16:14:20,869: INFO: data_ingestion_components: Download started...]
+[2025-03-27 16:14:26,717: INFO: data_ingestion_components: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 33DF:22BD46:CE6E1D:EA815A:67E5795D
+Accept-Ranges: bytes
+Date: Thu, 27 Mar 2025 16:14:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra-eddf8230073-FRA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1743092062.871748,VS0,VE891
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0fae67dba46deae65bab39a4ba7043e2b5f25e6c
+Expires: Thu, 27 Mar 2025 16:19:22 GMT
+Source-Age: 0
+
+]
+[2025-03-27 16:14:28,893: INFO: main: >>>>>> stage Data Ingestion - Stage 1 completed <<<<<<
+
+End of the Stage]
+[2025-03-27 16:14:28,894: INFO: main: >>>>>> stage Model Preparation - Stage 2 started <<<<<<]
+[2025-03-27 16:14:28,897: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:14:28,899: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:14:28,900: INFO: common: created directory at: artifacts]
+[2025-03-27 16:14:28,901: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-27 16:14:31,232: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-27 16:14:32,293: INFO: main: >>>>>> stage Model Preparation - Stage 2 completed <<<<<<
+
+End of the Stage]
+[2025-03-27 16:14:32,294: INFO: main: >>>>>> stage Model Training - Stage 3 started <<<<<<]
+[2025-03-27 16:14:32,432: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:14:32,441: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:14:32,444: INFO: common: created directory at: artifacts]
+[2025-03-27 16:14:32,473: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-03-27 16:14:32,477: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-03-27 16:14:32,556: INFO: common: created directory at: artifacts\training]
+[2025-03-27 16:16:22,201: INFO: main: >>>>>> stage Model Training - Stage 3 completed <<<<<<
+
+End of the Stage]
+[2025-03-27 16:16:22,202: INFO: main: >>>>>> stage Model Evaluation - Stage 4 started <<<<<<]
+[2025-03-27 16:16:22,332: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:16:22,351: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:16:22,354: INFO: common: created directory at: artifacts]
+[2025-03-27 16:16:26,767: INFO: main: >>>>>> stage Data Ingestion - Stage 1 started <<<<<<]
+[2025-03-27 16:16:26,785: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:16:26,824: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:16:26,863: INFO: common: created directory at: artifacts]
+[2025-03-27 16:16:26,887: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-27 16:16:26,909: INFO: data_ingestion_components: Trying to download file...]
+[2025-03-27 16:16:26,929: INFO: data_ingestion_components: File already exists of size: 21806 KB]
+[2025-03-27 16:16:27,294: INFO: main: >>>>>> stage Data Ingestion - Stage 1 completed <<<<<<
+
+End of the Stage]
+[2025-03-27 16:16:27,306: INFO: main: >>>>>> stage Model Preparation - Stage 2 started <<<<<<]
+[2025-03-27 16:16:27,334: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:16:27,358: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:16:27,374: INFO: common: created directory at: artifacts]
+[2025-03-27 16:16:27,389: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-27 16:16:31,485: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-27 16:16:34,284: INFO: main: >>>>>> stage Model Preparation - Stage 2 completed <<<<<<
+
+End of the Stage]
+[2025-03-27 16:16:34,293: INFO: main: >>>>>> stage Model Training - Stage 3 started <<<<<<]
+[2025-03-27 16:16:34,321: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:16:34,348: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:16:34,360: INFO: common: created directory at: artifacts]
+[2025-03-27 16:16:34,386: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2025-03-27 16:16:34,430: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-03-27 16:16:34,525: INFO: common: created directory at: artifacts\training]
+[2025-03-27 16:17:08,259: INFO: common: json file saved at:scores.json]
+[2025-03-27 16:17:08,272: INFO: main: >>>>>> stage Model Evaluation - Stage 4 completed <<<<<<
+
+End of the Stage]
+[2025-03-27 16:17:13,096: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:17:13] "GET /train HTTP/1.1" 200 -]
+[2025-03-27 16:18:22,508: INFO: main: >>>>>> stage Model Training - Stage 3 completed <<<<<<
+
+End of the Stage]
+[2025-03-27 16:18:22,511: INFO: main: >>>>>> stage Model Evaluation - Stage 4 started <<<<<<]
+[2025-03-27 16:18:22,525: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-27 16:18:22,535: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-27 16:18:22,538: INFO: common: created directory at: artifacts]
+[2025-03-27 16:18:48,305: INFO: common: json file saved at:scores.json]
+[2025-03-27 16:18:48,305: INFO: main: >>>>>> stage Model Evaluation - Stage 4 completed <<<<<<
+
+End of the Stage]
