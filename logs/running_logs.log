@@ -361,3 +361,8 @@ End of the Stage]
 [2025-03-27 16:18:48,305: INFO: main: >>>>>> stage Model Evaluation - Stage 4 completed <<<<<<
 
 End of the Stage]
+[2025-03-27 16:18:48,910: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:18:48] "GET /train HTTP/1.1" 200 -]
+[2025-03-27 16:18:49,097: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:18:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-03-27 16:21:39,673: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:21:39] "GET / HTTP/1.1" 200 -]
+[2025-03-27 16:21:57,911: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:21:57] "POST /predict HTTP/1.1" 200 -]
+[2025-03-27 16:22:02,743: INFO: _internal: 192.168.0.6 - - [27/Mar/2025 16:22:02] "POST /predict HTTP/1.1" 200 -]
